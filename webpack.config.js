@@ -17,6 +17,12 @@ module.exports = {
         }
       },
       {
+        enforce: 'pre',
+        test: /\.jsx?$/,
+        loader: 'eslint-loader',
+        exclude: /node_modules/
+      },
+      {
         test: /\.css$/,
         exclude: /node_modules/,
         use: [
@@ -37,7 +43,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', '.json']
   },
   mode: 'development'
 };
