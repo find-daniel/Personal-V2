@@ -1,0 +1,36 @@
+:root {
+  --headerfont: 'Nunito', sans-serif;
+  --contentfont: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.sidebar {
+  background-color: #998f86;
+  grid-column: 1 / 13;
+  grid-row: 12 / 13;
+  order: 2;
+}
+
+.content {
+  background-color: yellow;
+  grid-column: 1 / 13;
+  grid-row: 1 / 12;
+  order: 1;
+}
+
+@media (width >= 1024px) {
+  .sidebar {
+    grid-column: 1 / 4;
+    grid-row: 1 / 13;
+  }
+  .content {
+    grid-column: 4 / 13;
+    grid-row: 1 / 13;
+  }
+}
