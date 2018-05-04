@@ -1,3 +1,5 @@
+// @flow
+
 import React from 'react';
 import Sidebar from './components/Sidebar';
 import Content from './components/Content';

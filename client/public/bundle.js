@@ -83,6 +83,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 
 /***/ }),
 
+/***/ "./client/src/components/Banner.jsx":
+/*!******************************************!*\
+  !*** ./client/src/components/Banner.jsx ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Banner = function Banner() {\n  return _react2.default.createElement(\n    \"div\",\n    { className: \"jumbotron-fluid banner\" },\n    _react2.default.createElement(\n      \"div\",\n      { className: \"banner-text\" },\n      _react2.default.createElement(\n        \"p\",\n        null,\n        \"Hi, I'm Daniel Sanchez\"\n      )\n    )\n  );\n};\n\nexports.default = Banner;\n\n//# sourceURL=webpack:///./client/src/components/Banner.jsx?");
+
+/***/ }),
+
 /***/ "./client/src/components/Content.jsx":
 /*!*******************************************!*\
   !*** ./client/src/components/Content.jsx ***!
@@ -91,7 +103,19 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Content = function Content() {\n  return _react2.default.createElement(\n    \"div\",\n    { className: \"content\" },\n    _react2.default.createElement(\n      \"h1\",\n      null,\n      \"Content\"\n    )\n  );\n};\n\nexports.default = Content;\n\n//# sourceURL=webpack:///./client/src/components/Content.jsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _Banner = __webpack_require__(/*! ./Banner */ \"./client/src/components/Banner.jsx\");\n\nvar _Banner2 = _interopRequireDefault(_Banner);\n\nvar _SectionHeader = __webpack_require__(/*! ./SectionHeader */ \"./client/src/components/SectionHeader.jsx\");\n\nvar _SectionHeader2 = _interopRequireDefault(_SectionHeader);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Content = function Content() {\n  return _react2.default.createElement(\n    'div',\n    { className: 'content' },\n    _react2.default.createElement(_Banner2.default, null),\n    _react2.default.createElement(_SectionHeader2.default, { section: 'about' }),\n    _react2.default.createElement(\n      'h1',\n      null,\n      'Content'\n    )\n  );\n};\nexports.default = Content;\n\n//# sourceURL=webpack:///./client/src/components/Content.jsx?");
+
+/***/ }),
+
+/***/ "./client/src/components/SectionHeader.jsx":
+/*!*************************************************!*\
+  !*** ./client/src/components/SectionHeader.jsx ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar SectionHeader = function SectionHeader(props) {\n  return _react2.default.createElement(\n    'div',\n    null,\n    _react2.default.createElement(\n      'h1',\n      null,\n      props.section\n    )\n  );\n};\nexports.default = SectionHeader;\n\n//# sourceURL=webpack:///./client/src/components/SectionHeader.jsx?");
 
 /***/ }),
 
@@ -137,7 +161,7 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader??re
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".wrapper {\\n  display: grid;\\n  height: 100vh;\\n  grid-template-columns: repeat(12, 1fr);\\n  grid-template-rows: repeat(12, 1fr);\\n}\\n\\n.sidebar {\\n  background-color: #998f86;\\n  grid-column: 1 / 13;\\n  grid-row: 12 / 13;\\n  -webkit-box-ordinal-group: 3;\\n      -ms-flex-order: 2;\\n          order: 2;\\n}\\n\\n.content {\\n  background-color: yellow;\\n  grid-column: 1 / 13;\\n  grid-row: 1 / 12;\\n  -webkit-box-ordinal-group: 2;\\n      -ms-flex-order: 1;\\n          order: 1;\\n}\\n\\n@media (min-width: 1024px) {\\n  .sidebar {\\n    grid-column: 1 / 4;\\n    grid-row: 1 / 13;\\n  }\\n  .content {\\n    grid-column: 4 / 13;\\n    grid-row: 1 / 13;\\n  }\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./client/src/styles.css?./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/lib");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".wrapper {\\n  display: grid;\\n  min-height: 100vh;\\n  grid-template-columns: repeat(12, 1fr);\\n  grid-template-rows: repeat(12, 1fr);\\n}\\n\\n.sidebar {\\n  background-color: #998f86;\\n  grid-column: 1 / 13;\\n  grid-row: 12 / 13;\\n  -webkit-box-ordinal-group: 3;\\n      -ms-flex-order: 2;\\n          order: 2;\\n}\\n\\n.content {\\n  background-color: yellow;\\n  grid-column: 1 / 13;\\n  grid-row: 1 / 12;\\n  -webkit-box-ordinal-group: 2;\\n      -ms-flex-order: 1;\\n          order: 1;\\n}\\n\\n.banner {\\n  background-color: orange;\\n  height: 45vh;\\n  display: -webkit-box;\\n  display: -ms-flexbox;\\n  display: flex;\\n  -webkit-box-pack: center;\\n      -ms-flex-pack: center;\\n          justify-content: center;\\n}\\n\\n.banner-text {\\n  font-size: 1.5em;\\n  font-family: 'Nunito', sans-serif;\\n  font-family: 'Nunito', sans-serif;\\n  -ms-flex-item-align: center;\\n      align-self: center;\\n}\\n\\n@media (min-width: 1024px) {\\n  .sidebar {\\n    grid-column: 1 / 3;\\n    grid-row: 1 / 13;\\n    height: 100vh;\\n  }\\n  .content {\\n    grid-column: 3 / 13;\\n    grid-row: 1 / 13;\\n    min-height: 100vh;\\n  }\\n  .banner-text {\\n    font-size: 2.5em;\\n  }\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./client/src/styles.css?./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/lib");
 
 /***/ }),
 
