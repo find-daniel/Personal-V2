@@ -79,7 +79,19 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _Sidebar = __webpack_require__(/*! ./components/Sidebar */ \"./client/src/components/Sidebar.jsx\");\n\nvar _Sidebar2 = _interopRequireDefault(_Sidebar);\n\nvar _Content = __webpack_require__(/*! ./components/Content */ \"./client/src/components/Content.jsx\");\n\nvar _Content2 = _interopRequireDefault(_Content);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = function App() {\n  return _react2.default.createElement(\n    'div',\n    { className: 'wrapper' },\n    _react2.default.createElement(_Sidebar2.default, null),\n    _react2.default.createElement(_Content2.default, null)\n  );\n};\n\nexports.default = App;\n\n//# sourceURL=webpack:///./client/src/App.jsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _Content = __webpack_require__(/*! ./components/Content */ \"./client/src/components/Content.jsx\");\n\nvar _Content2 = _interopRequireDefault(_Content);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar App = function App() {\n  return _react2.default.createElement(\n    'div',\n    { className: 'wrapper' },\n    _react2.default.createElement(_Content2.default, null)\n  );\n};\n\nexports.default = App;\n\n//# sourceURL=webpack:///./client/src/App.jsx?");
+
+/***/ }),
+
+/***/ "./client/src/components/About.jsx":
+/*!*****************************************!*\
+  !*** ./client/src/components/About.jsx ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar About = function About() {\n  return _react2.default.createElement(\n    \"section\",\n    { className: \"about-content section\" },\n    _react2.default.createElement(\n      \"h1\",\n      null,\n      \"Inside About\"\n    )\n  );\n};\n\nexports.default = About;\n\n//# sourceURL=webpack:///./client/src/components/About.jsx?");
 
 /***/ }),
 
@@ -95,6 +107,18 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 
 /***/ }),
 
+/***/ "./client/src/components/Contact.jsx":
+/*!*******************************************!*\
+  !*** ./client/src/components/Contact.jsx ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Contact = function Contact() {\n  return _react2.default.createElement(\n    \"section\",\n    { className: \"contact-content section\" },\n    _react2.default.createElement(\n      \"h1\",\n      null,\n      \"Inside Contact\"\n    )\n  );\n};\n\nexports.default = Contact;\n\n//# sourceURL=webpack:///./client/src/components/Contact.jsx?");
+
+/***/ }),
+
 /***/ "./client/src/components/Content.jsx":
 /*!*******************************************!*\
   !*** ./client/src/components/Content.jsx ***!
@@ -103,7 +127,43 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _Banner = __webpack_require__(/*! ./Banner */ \"./client/src/components/Banner.jsx\");\n\nvar _Banner2 = _interopRequireDefault(_Banner);\n\nvar _SectionHeader = __webpack_require__(/*! ./SectionHeader */ \"./client/src/components/SectionHeader.jsx\");\n\nvar _SectionHeader2 = _interopRequireDefault(_SectionHeader);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Content = function Content() {\n  return _react2.default.createElement(\n    'div',\n    { className: 'content' },\n    _react2.default.createElement(_Banner2.default, null),\n    _react2.default.createElement(_SectionHeader2.default, { section: 'about' }),\n    _react2.default.createElement(\n      'h1',\n      null,\n      'Content'\n    )\n  );\n};\nexports.default = Content;\n\n//# sourceURL=webpack:///./client/src/components/Content.jsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _Banner = __webpack_require__(/*! ./Banner */ \"./client/src/components/Banner.jsx\");\n\nvar _Banner2 = _interopRequireDefault(_Banner);\n\nvar _SectionHeader = __webpack_require__(/*! ./SectionHeader */ \"./client/src/components/SectionHeader.jsx\");\n\nvar _SectionHeader2 = _interopRequireDefault(_SectionHeader);\n\nvar _About = __webpack_require__(/*! ./About */ \"./client/src/components/About.jsx\");\n\nvar _About2 = _interopRequireDefault(_About);\n\nvar _Tech = __webpack_require__(/*! ./Tech */ \"./client/src/components/Tech.jsx\");\n\nvar _Tech2 = _interopRequireDefault(_Tech);\n\nvar _Portfolio = __webpack_require__(/*! ./Portfolio */ \"./client/src/components/Portfolio.jsx\");\n\nvar _Portfolio2 = _interopRequireDefault(_Portfolio);\n\nvar _Contact = __webpack_require__(/*! ./Contact */ \"./client/src/components/Contact.jsx\");\n\nvar _Contact2 = _interopRequireDefault(_Contact);\n\nvar _Footer = __webpack_require__(/*! ./Footer */ \"./client/src/components/Footer.jsx\");\n\nvar _Footer2 = _interopRequireDefault(_Footer);\n\nvar _Nav = __webpack_require__(/*! ./Nav */ \"./client/src/components/Nav.jsx\");\n\nvar _Nav2 = _interopRequireDefault(_Nav);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Content = function Content() {\n  return _react2.default.createElement(\n    'div',\n    { className: 'content' },\n    _react2.default.createElement(_Nav2.default, null),\n    _react2.default.createElement(_Banner2.default, null),\n    _react2.default.createElement(_SectionHeader2.default, { section: 'about' }),\n    _react2.default.createElement(_About2.default, null),\n    _react2.default.createElement(_SectionHeader2.default, { section: 'tech' }),\n    _react2.default.createElement(_Tech2.default, null),\n    _react2.default.createElement(_SectionHeader2.default, { section: 'portfolio' }),\n    _react2.default.createElement(_Portfolio2.default, null),\n    _react2.default.createElement(_SectionHeader2.default, { section: 'contact' }),\n    _react2.default.createElement(_Contact2.default, null),\n    _react2.default.createElement(_Footer2.default, null)\n  );\n};\nexports.default = Content;\n\n//# sourceURL=webpack:///./client/src/components/Content.jsx?");
+
+/***/ }),
+
+/***/ "./client/src/components/Footer.jsx":
+/*!******************************************!*\
+  !*** ./client/src/components/Footer.jsx ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Footer = function Footer() {\n  return _react2.default.createElement(\n    \"section\",\n    { className: \"footer-content footer\" },\n    _react2.default.createElement(\n      \"h1\",\n      null,\n      \"Inside Footer\"\n    )\n  );\n};\n\nexports.default = Footer;\n\n//# sourceURL=webpack:///./client/src/components/Footer.jsx?");
+
+/***/ }),
+
+/***/ "./client/src/components/Nav.jsx":
+/*!***************************************!*\
+  !*** ./client/src/components/Nav.jsx ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Nav = function Nav() {\n  return _react2.default.createElement(\n    \"nav\",\n    { className: \"nav navbar navbar-expand-lg navbar-light\" },\n    _react2.default.createElement(\n      \"a\",\n      { className: \"navbar-brand\", href: \"#somewhere\" },\n      \"DANIEL SANCHEZ\"\n    ),\n    _react2.default.createElement(\n      \"button\",\n      {\n        className: \"navbar-toggler\",\n        type: \"button\",\n        \"data-toggle\": \"collapse\",\n        \"data-target\": \"#nav-toggle\",\n        \"aria-controls\": \"nav-toggle\",\n        \"aria-expanded\": \"false\",\n        \"aria-label\": \"Toggle Navigation\"\n      },\n      _react2.default.createElement(\"span\", { className: \"navbar-toggler-icon\" })\n    ),\n    _react2.default.createElement(\n      \"div\",\n      { className: \"collapse navbar-collapse nav-content\", id: \"nav-toggle\" },\n      _react2.default.createElement(\n        \"ul\",\n        { className: \"navbar-nav \" },\n        _react2.default.createElement(\n          \"li\",\n          { className: \"nav-item\" },\n          _react2.default.createElement(\n            \"a\",\n            { className: \"nav-link\", href: \"#about\" },\n            \"ABOUT\"\n          )\n        ),\n        _react2.default.createElement(\n          \"li\",\n          { className: \"nav-item\" },\n          _react2.default.createElement(\n            \"a\",\n            { className: \"nav-link\", href: \"#tech\" },\n            \"TECH\"\n          )\n        ),\n        _react2.default.createElement(\n          \"li\",\n          { className: \"nav-item\" },\n          _react2.default.createElement(\n            \"a\",\n            { className: \"nav-link\", href: \"#portfolio\" },\n            \"PORTFOLIO\"\n          )\n        ),\n        _react2.default.createElement(\n          \"li\",\n          { className: \"nav-item\" },\n          _react2.default.createElement(\n            \"a\",\n            { className: \"nav-link\", href: \"#contact\" },\n            \"CONTACT\"\n          )\n        )\n      )\n    )\n  );\n};\n\nexports.default = Nav;\n\n//# sourceURL=webpack:///./client/src/components/Nav.jsx?");
+
+/***/ }),
+
+/***/ "./client/src/components/Portfolio.jsx":
+/*!*********************************************!*\
+  !*** ./client/src/components/Portfolio.jsx ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Portfolio = function Portfolio() {\n  return _react2.default.createElement(\n    \"section\",\n    { className: \"portfolio-content section\" },\n    _react2.default.createElement(\n      \"h1\",\n      null,\n      \"Inside Portfolio\"\n    )\n  );\n};\n\nexports.default = Portfolio;\n\n//# sourceURL=webpack:///./client/src/components/Portfolio.jsx?");
 
 /***/ }),
 
@@ -115,19 +175,19 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar SectionHeader = function SectionHeader(props) {\n  return _react2.default.createElement(\n    'div',\n    null,\n    _react2.default.createElement(\n      'h1',\n      null,\n      props.section\n    )\n  );\n};\nexports.default = SectionHeader;\n\n//# sourceURL=webpack:///./client/src/components/SectionHeader.jsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar SectionHeader = function SectionHeader(props) {\n  return _react2.default.createElement(\n    \"div\",\n    { className: \"section-header\" },\n    _react2.default.createElement(\n      \"h1\",\n      null,\n      props.section\n    )\n  );\n};\nexports.default = SectionHeader;\n\n//# sourceURL=webpack:///./client/src/components/SectionHeader.jsx?");
 
 /***/ }),
 
-/***/ "./client/src/components/Sidebar.jsx":
-/*!*******************************************!*\
-  !*** ./client/src/components/Sidebar.jsx ***!
-  \*******************************************/
+/***/ "./client/src/components/Tech.jsx":
+/*!****************************************!*\
+  !*** ./client/src/components/Tech.jsx ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Sidebar = function Sidebar() {\n  return _react2.default.createElement(\n    \"div\",\n    { className: \"sidebar\" },\n    _react2.default.createElement(\n      \"h1\",\n      null,\n      \"Sidebar\"\n    )\n  );\n};\n\nexports.default = Sidebar;\n\n//# sourceURL=webpack:///./client/src/components/Sidebar.jsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Tech = function Tech() {\n  return _react2.default.createElement(\n    \"section\",\n    { className: \"tech-content section\" },\n    _react2.default.createElement(\n      \"h1\",\n      null,\n      \"Inside Tech\"\n    )\n  );\n};\n\nexports.default = Tech;\n\n//# sourceURL=webpack:///./client/src/components/Tech.jsx?");
 
 /***/ }),
 
@@ -161,7 +221,7 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader??re
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".wrapper {\\n  display: grid;\\n  min-height: 100vh;\\n  grid-template-columns: repeat(12, 1fr);\\n  grid-template-rows: repeat(12, 1fr);\\n}\\n\\n.sidebar {\\n  background-color: #998f86;\\n  grid-column: 1 / 13;\\n  grid-row: 12 / 13;\\n  -webkit-box-ordinal-group: 3;\\n      -ms-flex-order: 2;\\n          order: 2;\\n}\\n\\n.content {\\n  background-color: yellow;\\n  grid-column: 1 / 13;\\n  grid-row: 1 / 12;\\n  -webkit-box-ordinal-group: 2;\\n      -ms-flex-order: 1;\\n          order: 1;\\n}\\n\\n.banner {\\n  background-color: orange;\\n  height: 45vh;\\n  display: -webkit-box;\\n  display: -ms-flexbox;\\n  display: flex;\\n  -webkit-box-pack: center;\\n      -ms-flex-pack: center;\\n          justify-content: center;\\n}\\n\\n.banner-text {\\n  font-size: 1.5em;\\n  font-family: 'Nunito', sans-serif;\\n  font-family: 'Nunito', sans-serif;\\n  -ms-flex-item-align: center;\\n      align-self: center;\\n}\\n\\n@media (min-width: 1024px) {\\n  .sidebar {\\n    grid-column: 1 / 3;\\n    grid-row: 1 / 13;\\n    height: 100vh;\\n  }\\n  .content {\\n    grid-column: 3 / 13;\\n    grid-row: 1 / 13;\\n    min-height: 100vh;\\n  }\\n  .banner-text {\\n    font-size: 2.5em;\\n  }\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./client/src/styles.css?./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/lib");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \"/* VARS */\\n\\nhtml {\\n  -webkit-font-smoothing: antialiased;\\n}\\n\\n.wireframe {\\n  border: 1px solid black;\\n}\\n\\n/* LAYOUT */\\n\\n.wrapper {\\n  display: -webkit-box;\\n  display: -ms-flexbox;\\n  display: flex;\\n  min-height: 100vh;\\n}\\n\\n.content {\\n  background-color: #fff;\\n  width: 100%;\\n}\\n\\n/* NAV */\\n.nav {\\n  position: fixed;\\n  background-color: rgba(255, 255, 255, .95);\\n  min-height: 75px;\\n  bottom: 0;\\n  width: 100%;\\n}\\n.nav-item:hover {\\n  background-color: #ffd470;\\n  background-color: #ffd470;\\n}\\n/* BANNER */\\n\\n.banner {\\n  background-color: #ffd470;\\n  background-color: #ffd470;\\n  height: 100vh;\\n  width: 100%;\\n  display: -webkit-box;\\n  display: -ms-flexbox;\\n  display: flex;\\n  -webkit-box-pack: center;\\n      -ms-flex-pack: center;\\n          justify-content: center;\\n}\\n.banner-text {\\n  font-size: 1.5em;\\n  font-family: 'Nunito', sans-serif;\\n  font-family: 'Nunito', sans-serif;\\n  -ms-flex-item-align: center;\\n      align-self: center;\\n}\\n\\n/* SECTIONS */\\n\\n.section-header {\\n  display: -webkit-box;\\n  display: -ms-flexbox;\\n  display: flex;\\n  -webkit-box-pack: center;\\n      -ms-flex-pack: center;\\n          justify-content: center;\\n  -webkit-box-align: center;\\n      -ms-flex-align: center;\\n          align-items: center;\\n  height: 100px;\\n  border: 1px solid black;\\n  font-family: 'Nunito', sans-serif;\\n  font-family: 'Nunito', sans-serif;\\n}\\n.section {\\n  display: -webkit-box;\\n  display: -ms-flexbox;\\n  display: flex;\\n  height: 400px;\\n  padding: 25px 5%;\\n  margin: 25px 5%;\\n  background-color: #ff9166;\\n  background-color: #ff9166;\\n}\\n\\n.footer {\\n  margin-top: 25px;\\n  margin-bottom: 75px;\\n  height: 75px;\\n  width: 100%;\\n  background-color: #58ccb6;\\n  background-color: #58ccb6;\\n}\\n\\n@media (min-width: 1024px) {\\n  .nav {\\n    position: fixed;\\n    background-color: transparent;\\n    height: 75px;\\n    top: 0;\\n    width: 100%;\\n  }\\n  .nav-content {\\n    display: -webkit-box;\\n    display: -ms-flexbox;\\n    display: flex;\\n    -webkit-box-pack: end;\\n        -ms-flex-pack: end;\\n            justify-content: flex-end;\\n  }\\n  .content {\\n    height: 100vh;\\n  }\\n  .banner {\\n    height: 100vh;\\n  }\\n  .banner-text {\\n    font-size: 2.5em;\\n  }\\n  .footer {\\n    margin-bottom: 0px;\\n  }\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./client/src/styles.css?./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/lib");
 
 /***/ }),
 

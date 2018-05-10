@@ -6,7 +6,7 @@ type Props = {
 };
 
 const SectionHeader = (props: Props) => (
-  <div>
+  <div className="section-header">
     <h1>{props.section}</h1>
   </div>
 );

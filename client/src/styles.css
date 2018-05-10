@@ -1,54 +1,108 @@
+/* VARS */
 :root {
   --headerfont: 'Nunito', sans-serif;
   --contentfont: 'Open Sans', sans-serif;
+  --bg-color: #fff;
+  --secondarycolor: #ff9166;
+  --nav-color: #5070b5;
+  --section-color: #ffd470;
+  --footer-color: #58ccb6;
 }
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+.wireframe {
+  border: 1px solid black;
+}
+
+/* LAYOUT */
 
 .wrapper {
-  display: grid;
+  display: flex;
   min-height: 100vh;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-}
-
-.sidebar {
-  background-color: #998f86;
-  grid-column: 1 / 13;
-  grid-row: 12 / 13;
-  order: 2;
 }
 
 .content {
-  background-color: yellow;
-  grid-column: 1 / 13;
-  grid-row: 1 / 12;
-  order: 1;
+  background-color: #fff;
+  width: 100%;
 }
 
+/* NAV */
+.nav {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  min-height: 75px;
+  bottom: 0;
+  width: 100%;
+}
+.nav-item:hover {
+  background-color: var(--section-color);
+}
+/* BANNER */
+
 .banner {
-  background-color: orange;
-  height: 45vh;
+  background-color: var(--section-color);
+  height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
-
 .banner-text {
   font-size: 1.5em;
   font-family: var(--headerfont);
   align-self: center;
 }
 
+/* SECTIONS */
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: 1px solid black;
+  font-family: var(--headerfont);
+}
+.section {
+  display: flex;
+  height: 400px;
+  padding: 25px 5%;
+  margin: 25px 5%;
+  background-color: var(--secondarycolor);
+}
+
+.footer {
+  margin-top: 25px;
+  margin-bottom: 75px;
+  height: 75px;
+  width: 100%;
+  background-color: var(--footer-color);
+}
+
 @media (width >= 1024px) {
-  .sidebar {
-    grid-column: 1 / 3;
-    grid-row: 1 / 13;
-    height: 100vh;
+  .nav {
+    position: fixed;
+    background-color: transparent;
+    height: 75px;
+    top: 0;
+    width: 100%;
+  }
+  .nav-content {
+    display: flex;
+    justify-content: flex-end;
   }
   .content {
-    grid-column: 3 / 13;
-    grid-row: 1 / 13;
-    min-height: 100vh;
+    height: 100vh;
+  }
+  .banner {
+    height: 100vh;
   }
   .banner-text {
     font-size: 2.5em;
+  }
+  .footer {
+    margin-bottom: 0px;
   }
 }
