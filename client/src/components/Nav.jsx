@@ -4,7 +4,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 
 const Nav = () => (
-  <Fade top>
+  <Fade top delay={800}>
     <nav className="nav navbar navbar-expand-lg navbar-light">
       <a className="navbar-brand" href="#top">
         DANIEL SANCHEZ
