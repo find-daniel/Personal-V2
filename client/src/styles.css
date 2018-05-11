@@ -244,6 +244,9 @@ body {
 .item-img > img {
   width: 100%;
 }
+.item-info {
+  margin: 20px 0;
+}
 
 /* CONTACT */
 .contact-content {
