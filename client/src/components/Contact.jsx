@@ -13,11 +13,21 @@ const Contact = () => (
         </p>
       </div>
       <div className="contact-options">
-        <div>
-          Email: <a href="mailto:atlow.archive@gmail.com?Subject=Hello%20Daniel">atlow.archive@gmail.com</a>
+        <div className="contact-option col-12">
+          <div className="option-icon col-2 col-md-5">
+            <i className="far fa-envelope fa-lg" />
+          </div>
+          <div className="option-info col-10 col-md-7">
+            <a href="mailto:atlow.archive@gmail.com?Subject=Hello%20Daniel">atlow.archive@gmail.com</a>
+          </div>
         </div>
-        <div>
-          Phone: <a href="tel:+1-951-281-9420">951-281-9420</a>
+        <div className="contact-option col-12">
+          <div className="option-icon col-2 col-md-5">
+            <i className="far fa-comment fa-lg" />
+          </div>
+          <div className="option-info col-10 col-md-7">
+            <a href="tel:+1-951-281-9420">951.281.9420</a>
+          </div>
         </div>
       </div>
     </section>

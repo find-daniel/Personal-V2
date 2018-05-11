@@ -8,6 +8,7 @@ const Portfolio = () => (
     <Fade left>
       <div className="portfolio-item">
         <div className="item-header">
+          <div className="point" />
           <h4>Wayfare</h4>
           <p>Fullstack Engineer</p>
         </div>
@@ -22,6 +23,7 @@ const Portfolio = () => (
     </Fade>
     <Fade right>
       <div className="portfolio-item">
+        <div className="point" />
         <div className="item-header">
           <h4>Codesling.io</h4>
           <p>Fullstack Engineer</p>
@@ -37,13 +39,14 @@ const Portfolio = () => (
     </Fade>
     <Fade left>
       <div className="portfolio-item">
+        <div className="point" />
         <div className="item-header">
           <h4>FoodThoughts</h4>
           <p>Fullstack Engineer</p>
         </div>
         <div className="item-img">IMAGE</div>
         <div className="item-info">
-          <p>Platform for searching and reviewing restaurants.</p>
+          <p>Food app where you can review and rate restaurants you've visited.</p>
         </div>
         <a href="https://github.com/find-daniel/Food-Thoughts" target="_blank" rel="noopener noreferrer">
           <button className="custom-btn">See the Code</button>

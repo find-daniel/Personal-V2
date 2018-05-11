@@ -135,16 +135,15 @@ body {
 }
 .point {
   border-bottom: 1px solid black;
-  animation: increase 2s;
+  animation: increase 3s;
   animation-fill-mode: forwards;
 }
 @keyframes increase {
   100% {
     opacity: 1;
-    width: 100px;
+    width: 35px;
   }
 }
-
 .section {
   display: flex;
   min-height: 1px;
@@ -185,7 +184,7 @@ body {
 }
 .tech-icons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
 }
@@ -194,7 +193,7 @@ body {
 }
 .tech-icon {
   padding: 1rem;
-  color: #303235;
+  color: #555555;
   border: 0.5px solid transparent;
   border-radius: 50%;
 }
@@ -213,7 +212,7 @@ body {
 }
 .portfolio-item {
   margin: 10px auto;
-  width: 90%;
+  width: 95%;
   text-align: left;
 }
 .item-img {
@@ -229,17 +228,37 @@ body {
   justify-content: flex-start;
   align-items: center;
   font-family: var(--contentfont);
+  color: #555555;
 }
 .contact-info {
   margin: 0 auto;
-  text-align: left;
-  width: 90%;
-  border: 1px solid black;
+  text-align: center;
+  width: 95%;
 }
 .contact-options {
   margin: 0 auto;
-  width: 90%;
-  border: 1px solid black;
+  width: 95%;
+}
+.contact-option {
+  display: flex;
+  justify-content: center;
+  min-height: 50px;
+}
+.option-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  font-size: 2rem;
+}
+.option-info {
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+  text-transform: uppercase;
+}
+.option-info > a {
+  color: var(--accent-color);
+  text-decoration: none;
 }
 
 /* FOOTER */
@@ -280,7 +299,7 @@ body {
   font-family: var(--headerfont);
 }
 
-@media (width >= 1024px) {
+@media (width >= 960px) {
   .nav {
     position: fixed;
     background-color: transparent;
@@ -292,16 +311,41 @@ body {
     display: flex;
     justify-content: flex-end;
   }
-  .content {
+  /* .content {
     height: 100vh;
-  }
+  } */
   .banner {
     height: 100vh;
+  }
+  .banner-textbox {
+    width: 50%;
   }
   .banner-text {
     font-size: 2.5em;
   }
+  .about-content {
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .about-img {
+    width: 50%;
+    margin: auto;
+  }
+  .tech-icons > i {
+    font-size: 6rem;
+  }
+  .portfolio-content {
+    flex-direction: row;
+  }
+  .portfolio-item {
+    width: 30%;
+    min-height: 50vh;
+    margin: auto;
+  }
   .footer {
     margin-bottom: 0px;
+  }
+  .socials {
+    width: 20%;
   }
 }

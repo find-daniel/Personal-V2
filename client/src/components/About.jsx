@@ -7,10 +7,10 @@ import image from '../assets/profile.png';
 const About = () => (
   <section className="about-content section">
     <Fade top>
-      <div>
+      <div className="col-lg-4">
         <img className="about-img" src={image} alt="Me" />
       </div>
-      <div className="about-info">
+      <div className="about-info col-lg-8">
         <p>
           I'm a software engineer with a passion for clean code and user experiences. I enjoy living in the forefront of
           modern web technologies and am always looking for opportunities to expand my technical toolkit. Currently I
