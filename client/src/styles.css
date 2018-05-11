@@ -67,6 +67,7 @@ body {
   bottom: 0;
   width: 100%;
   font-family: var(--headerfont);
+  z-index: 1;
 }
 .nav-item:hover {
   background-color: #92b2c9;
@@ -115,6 +116,7 @@ body {
 
 .section-header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100px;
@@ -125,8 +127,24 @@ body {
   color: var(--accent-color);
   text-align: center;
   align-items: center;
-  width: 90%;
 }
+.point {
+  height: 0;
+  width: 1px;
+  opacity: 0;
+}
+.point {
+  border-bottom: 1px solid black;
+  animation: increase 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes increase {
+  100% {
+    opacity: 1;
+    width: 100px;
+  }
+}
+
 .section {
   display: flex;
   min-height: 1px;
