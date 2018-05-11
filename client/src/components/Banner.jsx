@@ -10,6 +10,11 @@ const Banner = () => (
         <p className="banner-text">Hello, I'm Daniel</p>
         <p className="banner-subtext">Fullstack Software Engineer & UI / UX Enthusiast</p>
       </div>
+      <div className="arrow">
+        <a href="#about">
+          <i className="far fa-arrow-alt-circle-down" />
+        </a>
+      </div>
     </Fade>
   </div>
 );

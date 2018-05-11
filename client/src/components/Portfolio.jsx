@@ -12,7 +12,12 @@ const Portfolio = () => (
           <h4>Wayfare</h4>
           <p>Fullstack Engineer</p>
         </div>
-        <div className="item-img">IMAGE</div>
+        <div className="item-img">
+          <img
+            src="http://res.cloudinary.com/danielsr/image/upload/c_crop,h_768,w_1366,x_0/v1526064580/wayfare.png"
+            alt="Wayfare"
+          />
+        </div>
         <div className="item-info">
           <p>Work-stay app for travelers looking to barter skills/services in return for lodging.</p>
         </div>
@@ -28,7 +33,12 @@ const Portfolio = () => (
           <h4>Codesling.io</h4>
           <p>Fullstack Engineer</p>
         </div>
-        <div className="item-img">IMAGE</div>
+        <div className="item-img">
+          <img
+            src="http://res.cloudinary.com/danielsr/image/upload/c_scale,h_768,w_1366/v1526064579/Webp.net-resizeimage.png"
+            alt="Codesling.io"
+          />
+        </div>
         <div className="item-info">
           <p>Typeracer for algo challenges - see who can solve the problem first!</p>
         </div>
@@ -44,7 +54,12 @@ const Portfolio = () => (
           <h4>FoodThoughts</h4>
           <p>Fullstack Engineer</p>
         </div>
-        <div className="item-img">IMAGE</div>
+        <div className="item-img">
+          <img
+            src="http://res.cloudinary.com/danielsr/image/upload/c_crop,h_768,w_1366/v1526064580/foodthoughts.png"
+            alt="FoodThoughts"
+          />
+        </div>
         <div className="item-info">
           <p>Food app where you can review and rate restaurants you've visited.</p>
         </div>

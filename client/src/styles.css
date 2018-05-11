@@ -4,7 +4,7 @@
   --bannerfont: 'Montserrat', sans-serif;
   --contentfont: 'Open Sans', sans-serif;
   --bg-color: #f8f9fd;
-  --accent-color: #303235;
+  --accent-color: #555555;
   --secondarycolor: #ff9166;
   --nav-color: #5070b5;
   --section-color: #ffd470;
@@ -63,14 +63,14 @@ body {
 .nav {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.95);
-  min-height: 75px;
+  min-height: 80px;
   bottom: 0;
   width: 100%;
   font-family: var(--headerfont);
   z-index: 1;
 }
 .nav-item:hover {
-  background-color: #92b2c9;
+  border-bottom: 1px solid var(--accent-color);
 }
 .navbar-toggler-icon {
   border: none;
@@ -86,6 +86,7 @@ body {
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .banner-textbox {
@@ -111,6 +112,18 @@ body {
   margin: auto;
   text-align: center;
 }
+.arrow {
+  align-self: center;
+  margin-top: 50px;
+  color: var(--bg-color);
+  font-size: 4rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+}
+.arrow > a {
+  text-decoration: none;
+  color: var(--bg-color);
+}
 
 /* SECTIONS */
 
@@ -124,7 +137,6 @@ body {
 }
 .section-header-text {
   font-family: var(--bannerfont);
-  color: var(--accent-color);
   text-align: center;
   align-items: center;
 }
@@ -167,12 +179,19 @@ body {
   text-align: center;
 }
 .about-info {
-  margin: 0 auto;
+  margin: 25px auto 0;
   width: 95%;
   font-family: var(--contentfont);
   color: #555555;
   text-align: left;
   font-size: 1em;
+}
+.resume {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.resume-btn > i {
+  padding: 0 5px;
 }
 
 /* TECH */
@@ -199,7 +218,7 @@ body {
 }
 .tech-icon:hover {
   border: 0.5px solid #fff;
-  background-color: #92b2c9;
+  background-color: #555555;
   color: #fff;
 }
 
@@ -215,10 +234,15 @@ body {
   width: 95%;
   text-align: left;
 }
+.portfolio-item > a {
+  font-size: 1.2rem;
+}
 .item-img {
-  height: 200px;
+  min-height: 200px;
   border-radius: 2px;
-  background-color: var(--section-color);
+}
+.item-img > img {
+  width: 100%;
 }
 
 /* CONTACT */
@@ -300,6 +324,9 @@ body {
 }
 
 @media (width >= 960px) {
+  .section {
+    padding: 3rem;
+  }
   .nav {
     position: fixed;
     background-color: transparent;
@@ -325,10 +352,9 @@ body {
   }
   .about-content {
     flex-direction: row;
-    padding: 2rem;
   }
   .about-img {
-    width: 50%;
+    width: 65%;
     margin: auto;
   }
   .tech-icons > i {

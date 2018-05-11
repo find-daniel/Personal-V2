@@ -13,13 +13,13 @@ const Content = () => (
   <div className="content">
     <Nav />
     <Banner />
-    <SectionHeader section="ABOUT" />
+    <SectionHeader section="ABOUT" id="about" />
     <About />
-    <SectionHeader section="SOME TECH I ENJOY USING" />
+    <SectionHeader section="SOME TECH I ENJOY USING" id="tech" />
     <Tech />
-    <SectionHeader section="PORTFOLIO" />
+    <SectionHeader section="PORTFOLIO" id="portfolio" />
     <Portfolio />
-    <SectionHeader section="CONTACT" />
+    <SectionHeader section="CONTACT" id="contact" />
     <Contact />
     <Footer />
   </div>

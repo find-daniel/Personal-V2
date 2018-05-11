@@ -6,7 +6,7 @@ import Fade from 'react-reveal/Fade';
 const Nav = () => (
   <Fade top>
     <nav className="nav navbar navbar-expand-lg navbar-light">
-      <a className="navbar-brand" href="#somewhere">
+      <a className="navbar-brand" href="#top">
         DANIEL SANCHEZ
       </a>
       <button
