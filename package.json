@@ -8,6 +8,7 @@
     "start": "nodemon server/index.js",
     "lint": "eslint **/*.{js,jsx} --quiet",
     "watch": "webpack -w",
+    "build": "webpack",
     "flow": "flow"
   },
   "repository": {
