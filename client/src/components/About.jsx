@@ -2,14 +2,18 @@
 
 import React from 'react';
 import Fade from 'react-reveal/Fade';
-import image from '../assets/profile.png';
+// import image from '../assets/profile.png';
 import resume from '../assets/Daniel-Sanchez-Resume.pdf';
 
 const About = () => (
   <section className="about-content section">
     <Fade top cascade>
       <div className="col-lg-4">
-        <img className="about-img" src={image} alt="Me" />
+        <img
+          className="about-img"
+          src="http://res.cloudinary.com/danielsr/image/upload/c_scale,w_2560/v1534287294/profile.jpg"
+          alt="Me"
+        />
       </div>
       <div className="about-info col-lg-6">
         <p>

@@ -78,7 +78,7 @@ body {
 /* BANNER */
 
 .banner {
-  background-image: url('./assets/banner.jpg');
+  background-image: url('https://res.cloudinary.com/danielsr/image/upload/q_40/v1534287012/Personal%20-%20Banner.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

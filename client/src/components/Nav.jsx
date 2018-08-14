@@ -14,7 +14,6 @@ const Nav = () => (
         type="button"
         data-toggle="collapse"
         data-target="#nav-toggle"
-        aria-controls="nav-toggle"
         aria-expanded="false"
         aria-label="Toggle Navigation"
       >

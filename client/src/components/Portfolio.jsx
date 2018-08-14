@@ -14,7 +14,7 @@ const Portfolio = () => (
         </div>
         <div className="item-img">
           <img
-            src="//res.cloudinary.com/danielsr/image/upload/c_crop,h_768,w_1366,x_0/v1526064580/wayfare.png"
+            src="https://res.cloudinary.com/danielsr/image/upload/c_crop,h_768,w_1366,x_0/v1526064580/wayfare.jpg"
             alt="Wayfare"
           />
         </div>
@@ -35,7 +35,7 @@ const Portfolio = () => (
         </div>
         <div className="item-img">
           <img
-            src="//res.cloudinary.com/danielsr/image/upload/c_scale,h_768,w_1366/v1526064579/Webp.net-resizeimage.png"
+            src="https://res.cloudinary.com/danielsr/image/upload/c_scale,h_768,w_1366/v1526064579/Webp.net-resizeimage.jpg"
             alt="Codesling.io"
           />
         </div>
@@ -56,7 +56,7 @@ const Portfolio = () => (
         </div>
         <div className="item-img">
           <img
-            src="//res.cloudinary.com/danielsr/image/upload/c_crop,h_768,w_1366/v1526064580/foodthoughts.png"
+            src="https://res.cloudinary.com/danielsr/image/upload/c_crop,h_768,w_1366/v1526064580/foodthoughts.jpg"
             alt="FoodThoughts"
           />
         </div>
