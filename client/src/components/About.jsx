@@ -11,7 +11,7 @@ const About = () => (
       <div className="col-lg-4">
         <img
           className="about-img"
-          src="https://res.cloudinary.com/danielsr/image/upload/q_60/v1534287294/profile.jpg"
+          src="https://res.cloudinary.com/danielsr/image/upload/c_scale,q_auto,w_1280/v1534287294/profile.jpg"
           alt="Me"
         />
       </div>
