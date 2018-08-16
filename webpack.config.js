@@ -1,11 +1,23 @@
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 const path = require('path');
 
+const PUBLIC_PATH = 'https://www.danielsr.com/';
 module.exports = {
   entry: path.resolve('./client/src/index.js'),
   output: {
     path: path.resolve('./client/public'),
     filename: 'bundle.js'
   },
+  plugins: [
+    new SWPrecacheWebpackPlugin({
+      cacheId: 'personal site',
+      dontCacheBustUrlsMatching: /\.\w{8}\./,
+      filename: 'service-worker.js',
+      minify: false,
+      navigateFallback: `${PUBLIC_PATH}index.html`,
+      staticFileGlobsIgnorePatterns: [/\.map$/, /asset-manifest\.json$/]
+    })
+  ],
   module: {
     rules: [
       {

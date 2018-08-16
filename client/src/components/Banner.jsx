@@ -11,7 +11,7 @@ const Banner = () => (
         <p className="banner-subtext">Fullstack Software Engineer & UI / UX Enthusiast</p>
       </div>
       <div className="arrow">
-        <a href="#about">
+        <a href="#about" aria-label="Navigate Down Button">
           <i className="far fa-arrow-alt-circle-down" />
         </a>
       </div>

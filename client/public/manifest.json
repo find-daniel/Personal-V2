@@ -1,3 +1,10 @@
 {
-  "short_name": "Air Horner"
+  "main.js": "bundle.js",
+  "Daniel-Sanchez-Resume.pdf": "dd418f5d0300f3442008707f424b7f95.pdf",
+  "short_name": "DS Personal",
+  "name": "Daniel Sanchez Personal Website",
+  "start_url": ".",
+  "display": "fullscreen",
+  "theme_color": "#32324B",
+  "background_color": "#32324B"
 }
